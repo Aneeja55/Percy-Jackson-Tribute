@@ -1,0 +1,48 @@
+.heading{
+    text-align: center;
+    color:rgb(20, 121, 102);
+    text-shadow: 2px 2px 5px rgba(16, 183, 144, 0.715);
+    font-family: "lucida handwriting", cursive ;
+}
+
+.scrolling-text{
+    white-space: nowrap;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 80%;
+    animation: scroll 65s linear infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(-100%)
+    }
+}
+.text-container{
+    display: inline-flex;
+    padding-right: 100%;
+}
+.box-select{
+    background-color: rgba(43, 214, 200, 0.201);
+    height: 28px;
+    max-width: 100%;
+    border-style: outset;
+    border-color: rgba(4, 69, 66, 0.607);
+    word-spacing: 35px;
+    text-indent: 8%;
+    font-weight: bold;
+    padding-top: 5px;
+    color: rgb(18, 4, 90);
+}
+.box{
+    position: relative;
+}
+#pic{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 5px;
+}
