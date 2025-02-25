@@ -5,13 +5,33 @@
     font-family: "lucida handwriting", cursive ;
 }
 
+#contents {
+    position: relative;
+    padding-left: 120px;
+}
+
+#contents p {
+    position: absolute;
+    top: -23.5px;
+    left: -10px;
+    padding-left: 13px;
+    display: inline-block;
+    z-index: 1;
+    background: rgb(10, 64, 59);
+    color: rgb(190, 204, 244);
+    padding-right: 10px;
+    font-family: cursive ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
 .scrolling-text{
     white-space: nowrap;
     overflow: visible;
-    box-sizing: border-box;
-    width: 80%;
-    animation: scroll 65s linear infinite;
+    width: 100%;
+    animation: scroll 30s linear infinite;
 }
+
 @keyframes scroll {
     0%{
         transform: translate(100%);
