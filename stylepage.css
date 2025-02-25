@@ -59,10 +59,122 @@
 .box{
     position: relative;
 }
-#pic{
+.pic{
     text-align: center;
     position: relative;
     margin: 0 auto;
     padding-top: 10px;
     padding-left: 5px;
+}
+
+table,th,td{
+    position: inherit;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+th{
+    background-color: rgba(7, 72, 94, 0.714);
+    color: seashell;
+}
+
+.left-table{
+    width:20%;
+    background-color: rgba(43, 214, 200, 0.595);
+}
+
+.right-table{
+    width: 80%;
+    background-color: rgba(250, 128, 114, 0.785);
+}
+
+h2{
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(7, 72, 94, 0.714);
+    text-shadow: 2px 2px 5px rgba(16, 183, 144, 0.715);
+    padding-bottom: 5px;
+    opacity: 0.75;
+}
+
+.h2-bg{
+    position:relative;
+    padding-left: 10px;
+    font-family: sans-serif;
+    display:table;
+    margin:1px;
+    cursor:pointer;
+    transition:.6s;
+    width:100%;
+    font-family: "lucida handwriting", cursive ;
+}
+h2:before,
+h2:after {
+  content:attr(data-text);
+  transition:.6s;
+}
+h2:before {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index:-1;
+  text-shadow:
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px;
+  -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+          mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+}
+h2:hover {
+  transform:translate(-10px,-10px);
+}  
+h2:hover:before {
+  text-shadow:
+   1px 1px,
+   2px 2px,
+   3px 3px,
+   4px 4px,
+   5px 5px,
+   6px 6px,
+   7px 7px,
+   8px 8px,
+   9px 9px,
+   10px 10px;
+}
+p{
+    padding-left: 10px;
+}
+
+body{
+    background: url(img/bg2.png) repeat fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+.container{
+    z-index: 1;
+    opacity: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h3{
+    padding-left: 10px;
+    text-shadow: 2px 2px 5px rgba(16, 183, 144, 0.451);
+}
+.gal{
+    float: left;
+    display:block;
 }
