@@ -48,33 +48,85 @@
     padding-right: 100%;
 }
 .box-select{
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(43, 214, 200, 0.084);
     width: 100%;
-    padding-right: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgba(43, 214, 200, 0.201);
-    height: 28px;
-    gap:inherit;
-    border-style: outset;
-    border-color: rgba(4, 69, 66, 0.607);
-    font-weight: bold;
     padding: 5px;
     color: rgb(18, 4, 90);
+    gap: 10%;
+    flex-wrap: wrap;
+    border: 2px outset rgba(4, 69, 66, 0.607);
+    
+    /*padding-right: 100%;
+    height: 28px;
+    gap:inherit;
+    font-weight: bold;
     flex-direction: column;
-    align-items: center;
     flex-flow: row wrap;
     white-space: wrap;
-    flex-direction: column;
-    gap: 10%;
+    flex-direction: column;*/
 }
 .box-select a {
     white-space: wrap;
-    flex-wrap: wrap;
+    padding: 5px 10px;
+    text-align:center;
+    flex: 1 1 auto;
+    border: 1px solid #4f4f4f00;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+    /*flex-wrap: wrap;
     flex-flow: row wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
 }
+
+a{
+    text-decoration: none;
+    font-family: "Papyrus", cursive;
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.508);
+}
+
+.box-select a:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.box-select a:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+.box-select a:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.box-select a:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+  
+
 .box{
     position: relative;
 }
