@@ -55,15 +55,19 @@
     flex-wrap: wrap;
     background-color: rgba(43, 214, 200, 0.201);
     height: 28px;
-    gap: 30px;
+    gap:inherit;
     border-style: outset;
     border-color: rgba(4, 69, 66, 0.607);
     font-weight: bold;
     padding: 5px;
     color: rgb(18, 4, 90);
+    flex-direction: column;
+    align-items: center;
 }
 .box-select a {
     white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
 }
 .box{
     position: relative;
@@ -211,6 +215,7 @@ h3{
         font-size: 1.5rem;
     }
     .box-select {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -225,6 +230,7 @@ h3{
     }
     
     .box-select {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -240,6 +246,7 @@ h3{
     }
     
     .box-select {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -251,6 +258,7 @@ h3{
     }
     
     .box-select {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
