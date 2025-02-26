@@ -169,6 +169,7 @@ p{
 body{
     background: url(img/bg2.png) repeat fixed;
     width: 100%;
+    justify-content: center;
     background-size: cover;
     top: 0;
     left: 0;
@@ -179,7 +180,7 @@ body{
 .container{
     z-index: 1;
     opacity: 100%;
-    max-width: 1200px;
+    max-width: fit-content;
     margin: 0 auto;
     padding: 20px;
 }
@@ -272,3 +273,4 @@ h5{
     text-shadow: 2px 2px 5px rgba(16, 183, 144, 0.818);
     padding-bottom: 5px;
 }
+
