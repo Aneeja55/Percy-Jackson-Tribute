@@ -66,6 +66,7 @@
     flex-flow: row wrap;
     white-space: wrap;
     flex-direction: column;
+    gap: 10%;
 }
 .box-select a {
     white-space: wrap;
