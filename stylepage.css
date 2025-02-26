@@ -10,25 +10,21 @@
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: fit-content;
 }
 
 #contents p {
     position: absolute;
     top: -23.5px;
-    left: 0px;
-    padding-left: 20px;
+    left: -10px;
+    padding-left: 13px;
     display: inline-block;
     z-index: 1;
     background: rgb(10, 64, 59);
     color: rgb(190, 204, 244);
-    padding-right: 20px;
+    padding-right: 10px;
     font-family: cursive ;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: calc(100% - 40px);
   }
 
 .scrolling-text{
@@ -52,8 +48,9 @@
     padding-right: 100%;
 }
 .box-select{
-    max-width: fit-content;
-    display: flex;
+    display: inline-flex;
+    width: 100%;
+    padding-right: 100%;
     justify-content: center;
     flex-wrap: wrap;
     background-color: rgba(43, 214, 200, 0.201);
@@ -70,10 +67,6 @@
 }
 .box{
     position: relative;
-    width: 100%;
-    max-width: fit-content;
-    padding: 0 20px;
-    margin: 0 auto;
 }
 .pic{
     text-align: center;
@@ -175,6 +168,7 @@ p{
 
 body{
     background: url(img/bg2.png) repeat fixed;
+    width: 100%;
     background-size: cover;
     top: 0;
     left: 0;
